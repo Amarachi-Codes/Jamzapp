@@ -1,0 +1,114 @@
+@import url('https://fonts.cdnfonts.com/css/product-sans');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+/* @import url("home.css"); */
+:root{
+    --bg:whitesmoke;
+    --sb-bg:white;
+    --color-1:rgb(55, 55, 55);
+    --disc-card:white;
+    --bg-light:rgb(243, 243, 243);
+}
+
+*{
+    font-family: 'Product Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+.app_container{
+    background-color: var(--bg);
+    /* min-height: 100vh; */
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.app_container .sidebar{
+    background-color: var(--sb-bg);
+    width: 300px;
+    min-width: 300px;
+    height: 100vh;
+    max-height: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.app_container .sidebar .logo_container{
+    padding: 20px;
+    padding-bottom: 0;
+}       
+
+.app_container .sidebar .logo_container a{
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+.app_container .sidebar .logo_container a h2{
+    display: flex;
+    font-size:30px;
+}
+
+.app_container .sidebar menu{
+    padding: 0px 20px;
+    padding-top: 30px;
+}
+
+.app_container .sidebar menu ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.app_container .sidebar menu ul a{
+    text-decoration: none;
+    color: var(--color-1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px ;
+    border-radius: 8px;
+}
+
+.app_container .sidebar menu ul a:hover{
+    background-color: var(--bg-light);
+}
+
+.app_container .sidebar menu .menu_header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app_container .sidebar menu .menu_header_container i{
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg-light);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app_content{
+    padding: 30px;
+    width: 100%;
+}
+
+@media (prefers-color-scheme:dark){
+    :root{
+        --bg:rgb(21, 21, 21);
+        --sb-bg:rgb(41, 41, 41);
+        --color-1:rgb(210, 210, 210);
+        --disc-card:rgb(41, 41, 41);
+        --bg-light:rgb(81, 81, 81);
+    }
+    body{
+        color: white;
+        background-color: var(--bg);
+    }
+}
+
