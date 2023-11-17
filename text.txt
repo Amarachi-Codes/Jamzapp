@@ -1,0 +1,21 @@
+----------
+DESIGN-1
+----------
+    |
+    |------------
+    | PAGES
+    ------|----
+    |      |
+    |      |---PLAYLIST.HTML
+    |       ../
+    |------------
+    | STYLES
+    -----|-----
+         |
+         |---GLOBAL.CSS
+         |
+         |---HOME.CSS
+         |
+         |---PLAYLIST.CSS
+    |
+    |--INDEX.HTML
